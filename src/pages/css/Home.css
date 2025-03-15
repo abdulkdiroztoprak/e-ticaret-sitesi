@@ -1,0 +1,181 @@
+.content {
+    display: flex;
+    align-items: center; /* Dikey hizalama */
+    justify-content: center; /* İçeriği ortalamak için */
+    gap: 20px; /* Logo ile yazı arasına boşluk ekler */
+    padding: 20px;
+}
+
+.content-left {
+    flex: 1; /* Sol taraf */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo-img {
+    width: 700px; /* Logonun başlangıç boyutu */
+    height: auto; /* Oranını koruyarak yüksekliği otomatik ayarla */
+    object-fit: contain; /* Resmin oranını koruyarak içeriği sığdır */
+}
+
+.content-right {
+    flex: 2; /* Sağ taraf */
+    text-align: left;
+    background-color: transparent;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.content-text{
+    font-size: 25px;
+    font-family:cursive ;
+    font-weight: bold;
+    color: var(--secondary-color);
+
+}
+
+
+/*********************************/
+.stats-container {
+    margin-top: 25px;
+    display: flex; /* Kutuları yan yana yerleştir */
+    justify-content: space-between; /* Kutular arası boşluk */
+    gap: 20px; /* Kutular arası boşluk */
+    padding: 40px; /* Container iç boşluğu artırıldı */
+    background-color: var(--primary-color); /* Arka plan rengi */
+    border: 4px solid var(--background-color); /* Kenarlık kalınlığı artırıldı */
+    border-radius: 15px; /* Köşeleri yuvarlak yap */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Gölge efekti artırıldı */
+  }
+  
+  .stats-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Kutuların eşit genişlikte olmasını sağlar */
+    padding: 40px; /* İç boşluk artırıldı */
+    background-color: var(--background-color); /* Kutu arka plan rengi */
+    border: 3px solid #ccc; /* Kenarlık kalınlığı artırıldı */
+    border-radius: 15px; /* Köşeleri yuvarlak yap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Kutu gölgesi artırıldı */
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-label {
+    font-size: 30px; /* Yazı boyutu artırıldı */
+    color: var(--primary-color); /* Metin rengi */
+    font-weight: bold;
+  }
+  
+  .stat-value {
+    font-size: 28px; /* Yazı boyutu artırıldı */
+    color: var(--secondary-color); /* Değer rengi */
+    font-weight: bold;
+  }
+  .stats-box:hover {
+    transform: scale(1.05); /* Kutu büyür */
+    transition: transform 0.3s ease; /* Geçiş efekti */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Gölge artar */
+  }
+
+  
+  .cart-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 20px; /* Daha yumuşak köşeler */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Daha hafif gölge */
+    font-size: 14px;
+    width: 270px;
+    position: relative; /* Favori ikonunu eklemek için */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0; /* Üst köşeler yuvarlak */
+  }
+  
+  .card-title {
+    font-size: 18px; /* Daha büyük başlık */
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+  }
+  
+  .card-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .centered-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  @media (max-width: 768px) {
+    .stats-container {
+      flex-direction: column; /* Kutuları alt alta yerleştir */
+      align-items: center; /* Kutuları ortalar */
+    }
+    .stats-box {
+      width: 100%; /* Kutuların genişliğini tam yapar */
+      max-width: 400px; /* Maksimum genişlik */
+      margin-bottom: 20px; /* Kutular arası boşluk */
+    }
+  }
+
+
+
+
+
+/*********************************/
+
+
+
+
+
+
+/* Ekran küçüldüğünde daha iyi görünmesi için responsive ayar */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Mobilde alt alta gelsin */
+        text-align: center;
+    }
+
+    .logo-img {
+        max-width: 350px; /* Küçük ekranlarda logoyu küçült */
+    }
+    .banner-img{
+        max-width: 500px ;
+        
+      }
+}
+

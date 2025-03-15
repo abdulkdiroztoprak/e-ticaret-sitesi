@@ -1,0 +1,91 @@
+/* Genel stil */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 40px;
+    
+  }
+
+  
+  .about-header h1 {
+    font-size: 40px;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .about-header p {
+    font-size: 18px;
+    color: #555;
+    font-style: italic;
+  }
+  
+  .about-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .about-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-card-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .about-card-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .about-card-text h2 {
+    font-size: 30px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .about-card-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .about-card-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-card-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+
+ 
+  
+  

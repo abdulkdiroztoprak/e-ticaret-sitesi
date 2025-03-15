@@ -1,0 +1,32 @@
+ /* Buton Tasarımı */
+ .custom-button {
+    background-color: #ae7554;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-button:hover {
+    background-color: #8f5e3a;
+    transform: scale(1.05);
+  }
+  
+  .custom-button:active {
+    background-color: #7a4a2f;
+    transform: scale(0.98);
+  }
+  
+  .custom-button:focus {
+    outline: none;
+  }
+  
+  .custom-button:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
